@@ -1,0 +1,66 @@
+body{
+	: black;
+}
+
+#op{
+	margin-right:90px;
+	font-family: arial;
+	font-size: 30px;	
+	text-decoration:none !important;
+	color:white;
+}
+.navbar li{
+	list-style:square;
+}
+.navbar a{
+	display:inline;	
+	font-size: 27px;
+	color:black; 
+	text-decoration: none !important;
+	margin-right:110px;
+	text-align: center;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+} 
+.navbar a:hover{
+	color:grey;
+	transition: .7s;
+	animation-name:navbr;
+}
+.navbr{
+	-webkit-animation-name:shake;
+	animation-name:navbr;
+} 
+
+@keyframes navbr{
+	from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+}
